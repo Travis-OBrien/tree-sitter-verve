@@ -167,13 +167,75 @@ module.exports = grammar(clojure, {
                 optional($._gap),
                 repeat(choice(field('value', $._form), $._gap)),
                 field('close', ")"))),
-        at_definition: $ =>
+
+
+        at_function_definition: $ =>
             prec(PREC.SPECIAL, seq(
                 field('open', "("),
                 optional($._gap),
                 "@",
                 repeat1($._gap),
-                field('type', $.sym_lit),
+                "function",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
+        at_global_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "global",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
+        at_macro_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "macro",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
+        at_method_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "method",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
+        at_constructor_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "constructor",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
+        at_package_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "package",
                 repeat($._gap),
                 field('args', $._form),
                 repeat(choice(field('body', $._form), $._gap)),
@@ -293,7 +355,7 @@ module.exports = grammar(clojure, {
                     field('close', ")"))),
 
         defun_keyword: _ => prec(10, clSymbol(choice('defun', 'defmacro', 'defgeneric', 'defmethod', 'defkek'))),
-        sexp_comment: $ => prec(10, seq('#_', $._form)),
+        sexp_comment: $ => prec(20, seq('#_', $._form)),
         defun_header: $ =>
             prec(PREC.SPECIAL, choice(
                 seq(field('keyword', $.defun_keyword),
@@ -329,7 +391,12 @@ module.exports = grammar(clojure, {
         _bare_list_lit: $ =>
             choice(prec(PREC.SPECIAL, $.defun),
                 prec(PREC.SPECIAL, $.loop_macro),
-                prec(PREC.SPECIAL, $.at_definition),
+                prec(PREC.SPECIAL, $.at_function_definition),
+                prec(PREC.SPECIAL, $.at_global_definition),
+                prec(PREC.SPECIAL, $.at_macro_definition),
+                prec(PREC.SPECIAL, $.at_method_definition),
+                prec(PREC.SPECIAL, $.at_constructor_definition),
+                prec(PREC.SPECIAL, $.at_package_definition),
                 seq(field('open', "("),
                     repeat(choice(field('value', $._form), $._gap)),
                     field('close', ")")),

@@ -4,7 +4,7 @@ includedir=${prefix}/include
 
 Name: tree-sitter-commonlisp
 Description: Commonlisp grammar for tree-sitter
-URL: https://github.com/tree-sitter-grammars/tree-sitter-commonlisp
+URL: https://github.com/Travis-OBrien/tree-sitter-verve
 Version: 0.4.1
 Requires: 
 Libs: -L${libdir}  -ltree-sitter-commonlisp
