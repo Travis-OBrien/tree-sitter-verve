@@ -193,6 +193,18 @@ module.exports = grammar(clojure, {
                 repeat(choice(field('body', $._form), $._gap)),
                 field('close', ")"))),
 
+        at_class_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "class",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+
         at_macro_definition: $ =>
             prec(PREC.SPECIAL, seq(
                 field('open', "("),
@@ -224,6 +236,18 @@ module.exports = grammar(clojure, {
                 "@",
                 repeat1($._gap),
                 "constructor",
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
+        
+        at_struct_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                "struct",
                 repeat($._gap),
                 field('args', $._form),
                 repeat(choice(field('body', $._form), $._gap)),
@@ -394,8 +418,10 @@ module.exports = grammar(clojure, {
                 prec(PREC.SPECIAL, $.at_function_definition),
                 prec(PREC.SPECIAL, $.at_global_definition),
                 prec(PREC.SPECIAL, $.at_macro_definition),
+                prec(PREC.SPECIAL, $.at_class_definition),
                 prec(PREC.SPECIAL, $.at_method_definition),
                 prec(PREC.SPECIAL, $.at_constructor_definition),
+                prec(PREC.SPECIAL, $.at_struct_definition),
                 prec(PREC.SPECIAL, $.at_package_definition),
                 seq(field('open', "("),
                     repeat(choice(field('value', $._form), $._gap)),
