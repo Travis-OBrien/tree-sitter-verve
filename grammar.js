@@ -17,9 +17,9 @@ const WHITESPACE =
 const PREC = {
     NUM_LIT: 0,
     NORMAL: 1,
-    PACKAGE_LIT: 2,
+    KWD_LIT: 2,      // Was 4, now lower
+    PACKAGE_LIT: 4,  // Was 2, now higher than KWD_LIT
     DOTTET_LIT: 3,
-    KWD_LIT: 4,
     SPECIAL: 5,
     META_LIT: 6,
 }
@@ -167,6 +167,17 @@ module.exports = grammar(clojure, {
                 optional($._gap),
                 repeat(choice(field('value', $._form), $._gap)),
                 field('close', ")"))),
+        at_definition: $ =>
+            prec(PREC.SPECIAL, seq(
+                field('open', "("),
+                optional($._gap),
+                "@",
+                repeat1($._gap),
+                field('type', $.sym_lit),
+                repeat($._gap),
+                field('args', $._form),
+                repeat(choice(field('body', $._form), $._gap)),
+                field('close', ")"))),
 
         _format_token: $ => choice(alias(NUMBER, $.num_lit), seq("'", alias(/./, $.char_lit))),
         // https://en.wikipedia.org/wiki/Format_Common_Lisp)
@@ -204,15 +215,25 @@ module.exports = grammar(clojure, {
             )),
 
         str_lit: $ =>
-            seq(
-                '"',
-                repeat(choice(
-                    token.immediate(prec(1, /[^\\~"]+/)),
-                    token.immediate(seq(/\\./)),
-                    $.format_specifier,
-                )),
-                optional('~'),
-                '"',
+            choice(
+                seq(
+                    '"',
+                    repeat(choice(
+                        token.immediate(prec(1, /[^\\~"]+/)),
+                        token.immediate(seq(/\\./)),
+                        $.format_specifier,
+                    )),
+                    optional('~'),
+                    '"',
+                ),
+                seq(
+                    '#{',
+                    repeat(choice(
+                        token.immediate(prec(1, /[^\\}]+/)),
+                        token.immediate(seq(/\\./)),
+                    )),
+                    '}',
+                ),
             ),
 
         for_clause_word: _ => loopSymbol(choice(
@@ -271,8 +292,8 @@ module.exports = grammar(clojure, {
                     repeat(choice($.loop_clause, $._gap)),
                     field('close', ")"))),
 
-        defun_keyword: _ => prec(10, clSymbol(choice('defun', 'defmacro', 'defgeneric', 'defmethod'))),
-
+        defun_keyword: _ => prec(10, clSymbol(choice('defun', 'defmacro', 'defgeneric', 'defmethod', 'defkek'))),
+        sexp_comment: $ => prec(10, seq('#_', $._form)),
         defun_header: $ =>
             prec(PREC.SPECIAL, choice(
                 seq(field('keyword', $.defun_keyword),
@@ -308,9 +329,13 @@ module.exports = grammar(clojure, {
         _bare_list_lit: $ =>
             choice(prec(PREC.SPECIAL, $.defun),
                 prec(PREC.SPECIAL, $.loop_macro),
+                prec(PREC.SPECIAL, $.at_definition),
                 seq(field('open', "("),
                     repeat(choice(field('value', $._form), $._gap)),
-                    field('close', ")"))),
+                    field('close', ")")),
+                seq(field('open', "["),
+                    repeat(choice(field('value', $._form), $._gap)),
+                    field('close', "]"))),
 
         package_lit: $ => prec(PREC.PACKAGE_LIT, choice(seq(
             field('package', choice($.sym_lit, 'cl')), // Make optional, instead of keywords?
@@ -368,6 +393,7 @@ module.exports = grammar(clojure, {
                     $.include_reader_macro,
                     $.complex_num_lit,
                     ".",
+                    $.sexp_comment
                 )),
 
         num_lit: _ =>
