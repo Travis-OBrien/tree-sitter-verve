@@ -312,14 +312,14 @@ module.exports = grammar(clojure, {
                     optional('~'),
                     '"',
                 ),
-                seq(
+                prec(10, seq(
                     '#{',
                     repeat(choice(
                         token.immediate(prec(1, /[^\\}]+/)),
                         token.immediate(seq(/\\./)),
                     )),
                     '}',
-                ),
+                )),
             ),
 
         for_clause_word: _ => loopSymbol(choice(
@@ -428,7 +428,10 @@ module.exports = grammar(clojure, {
                     field('close', ")")),
                 seq(field('open', "["),
                     repeat(choice(field('value', $._form), $._gap)),
-                    field('close', "]"))),
+                    field('close', "]")),
+                prec(10, seq(field('open', "{"),
+                    repeat(choice(field('value', $._form), $._gap)),
+                    field('close', "}")))),
 
         package_lit: $ => prec(PREC.PACKAGE_LIT, choice(seq(
             field('package', choice($.sym_lit, 'cl')), // Make optional, instead of keywords?

@@ -3774,6 +3774,10 @@
           {
             "type": "]",
             "named": false
+          },
+          {
+            "type": "}",
+            "named": false
           }
         ]
       },
@@ -3812,6 +3816,10 @@
           {
             "type": "vec_lit",
             "named": true
+          },
+          {
+            "type": "{",
+            "named": false
           }
         ]
       },
@@ -4596,6 +4604,10 @@
           {
             "type": "]",
             "named": false
+          },
+          {
+            "type": "}",
+            "named": false
           }
         ]
       },
@@ -4644,6 +4656,10 @@
           {
             "type": "vec_lit",
             "named": true
+          },
+          {
+            "type": "{",
+            "named": false
           }
         ]
       },
@@ -5363,6 +5379,10 @@
           {
             "type": "]",
             "named": false
+          },
+          {
+            "type": "}",
+            "named": false
           }
         ]
       },
@@ -5411,6 +5431,10 @@
           {
             "type": "vec_lit",
             "named": true
+          },
+          {
+            "type": "{",
+            "named": false
           }
         ]
       },
@@ -6357,6 +6381,10 @@
           {
             "type": "]",
             "named": false
+          },
+          {
+            "type": "}",
+            "named": false
           }
         ]
       },
@@ -6407,6 +6435,10 @@
           {
             "type": "vec_lit",
             "named": true
+          },
+          {
+            "type": "{",
+            "named": false
           }
         ]
       },
