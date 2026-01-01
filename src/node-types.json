@@ -35,11 +35,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -164,7 +172,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -274,7 +290,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -428,7 +452,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -538,7 +570,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -692,7 +732,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -802,7 +850,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -956,7 +1012,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1066,7 +1130,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1220,7 +1292,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1330,7 +1410,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1484,7 +1572,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1594,7 +1690,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1748,7 +1852,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -1858,7 +1970,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2012,7 +2132,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2122,7 +2250,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2362,11 +2498,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -2457,6 +2601,11 @@
     }
   },
   {
+    "type": "condition_lit",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "defun",
     "named": true,
     "fields": {
@@ -2505,7 +2654,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2639,7 +2796,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2858,7 +3023,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -2995,11 +3168,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -3128,11 +3309,19 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "dis_expr",
             "named": true
           },
           {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -3242,7 +3431,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -3349,6 +3546,10 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
@@ -3358,6 +3559,10 @@
         },
         {
           "type": "for_clause_word",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -3564,6 +3769,11 @@
     }
   },
   {
+    "type": "getter_setter_lit",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "include_reader_macro",
     "named": true,
     "fields": {
@@ -3588,7 +3798,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -3742,7 +3960,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -3952,7 +4178,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -4257,7 +4491,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -4609,7 +4851,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -4809,7 +5059,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -4986,11 +5244,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -5159,7 +5425,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -5292,7 +5566,15 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -5415,11 +5697,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -5604,7 +5894,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -5814,7 +6112,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -5951,11 +6257,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -6110,7 +6424,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -6260,7 +6582,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -6430,7 +6760,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -6632,7 +6970,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -6825,11 +7171,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -6954,7 +7308,15 @@
             "named": true
           },
           {
+            "type": "condition_lit",
+            "named": true
+          },
+          {
             "type": "fancy_literal",
+            "named": true
+          },
+          {
+            "type": "getter_setter_lit",
             "named": true
           },
           {
@@ -7061,11 +7423,19 @@
           "named": true
         },
         {
+          "type": "condition_lit",
+          "named": true
+        },
+        {
           "type": "dis_expr",
           "named": true
         },
         {
           "type": "fancy_literal",
+          "named": true
+        },
+        {
+          "type": "getter_setter_lit",
           "named": true
         },
         {
@@ -7404,6 +7774,10 @@
     "named": false
   },
   {
+    "type": "assert",
+    "named": false
+  },
+  {
     "type": "atan",
     "named": false
   },
@@ -7421,6 +7795,10 @@
   },
   {
     "type": "bignum",
+    "named": false
+  },
+  {
+    "type": "bind",
     "named": false
   },
   {
@@ -7461,6 +7839,10 @@
   },
   {
     "type": "bit-xor",
+    "named": false
+  },
+  {
+    "type": "block",
     "named": false
   },
   {
@@ -7516,7 +7898,27 @@
     "named": false
   },
   {
+    "type": "case",
+    "named": false
+  },
+  {
+    "type": "catch",
+    "named": false
+  },
+  {
+    "type": "ccase",
+    "named": false
+  },
+  {
     "type": "ceiling",
+    "named": false
+  },
+  {
+    "type": "cerror",
+    "named": false
+  },
+  {
+    "type": "check-type",
     "named": false
   },
   {
@@ -7532,6 +7934,10 @@
     "named": false
   },
   {
+    "type": "clrhash",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true
   },
@@ -7541,6 +7947,10 @@
   },
   {
     "type": "complexp",
+    "named": false
+  },
+  {
+    "type": "cond",
     "named": false
   },
   {
@@ -7604,11 +8014,27 @@
     "named": false
   },
   {
+    "type": "ecase",
+    "named": false
+  },
+  {
     "type": "else",
     "named": false
   },
   {
+    "type": "error",
+    "named": false
+  },
+  {
+    "type": "etypecase",
+    "named": false
+  },
+  {
     "type": "evenp",
+    "named": false
+  },
+  {
+    "type": "every",
     "named": false
   },
   {
@@ -7676,7 +8102,27 @@
     "named": false
   },
   {
+    "type": "get",
+    "named": false
+  },
+  {
+    "type": "getf",
+    "named": false
+  },
+  {
+    "type": "gethash",
+    "named": false
+  },
+  {
     "type": "global",
+    "named": false
+  },
+  {
+    "type": "handler-bind",
+    "named": false
+  },
+  {
+    "type": "handler-case",
     "named": false
   },
   {
@@ -7685,6 +8131,10 @@
   },
   {
     "type": "if",
+    "named": false
+  },
+  {
+    "type": "ignore-errors",
     "named": false
   },
   {
@@ -7721,6 +8171,14 @@
   },
   {
     "type": "ldb",
+    "named": false
+  },
+  {
+    "type": "let",
+    "named": false
+  },
+  {
+    "type": "let*",
     "named": false
   },
   {
@@ -7792,7 +8250,19 @@
     "named": true
   },
   {
+    "type": "none",
+    "named": false
+  },
+  {
     "type": "not",
+    "named": false
+  },
+  {
+    "type": "notany",
+    "named": false
+  },
+  {
+    "type": "notevery",
     "named": false
   },
   {
@@ -7832,6 +8302,38 @@
     "named": false
   },
   {
+    "type": "prog*",
+    "named": false
+  },
+  {
+    "type": "prog1",
+    "named": false
+  },
+  {
+    "type": "prog2",
+    "named": false
+  },
+  {
+    "type": "progn",
+    "named": false
+  },
+  {
+    "type": "psetf",
+    "named": false
+  },
+  {
+    "type": "psetq",
+    "named": false
+  },
+  {
+    "type": "put",
+    "named": false
+  },
+  {
+    "type": "putprop",
+    "named": false
+  },
+  {
     "type": "random",
     "named": false
   },
@@ -7864,11 +8366,31 @@
     "named": false
   },
   {
+    "type": "remhash",
+    "named": false
+  },
+  {
+    "type": "remprop",
+    "named": false
+  },
+  {
     "type": "repeat",
     "named": false
   },
   {
+    "type": "restart-bind",
+    "named": false
+  },
+  {
+    "type": "restart-case",
+    "named": false
+  },
+  {
     "type": "return",
+    "named": false
+  },
+  {
+    "type": "return-from",
     "named": false
   },
   {
@@ -7884,11 +8406,39 @@
     "named": true
   },
   {
+    "type": "set",
+    "named": false
+  },
+  {
+    "type": "set-slot-value",
+    "named": false
+  },
+  {
+    "type": "setf",
+    "named": false
+  },
+  {
+    "type": "setq",
+    "named": false
+  },
+  {
+    "type": "signal",
+    "named": false
+  },
+  {
     "type": "signum",
     "named": false
   },
   {
     "type": "sin",
+    "named": false
+  },
+  {
+    "type": "slot-value",
+    "named": false
+  },
+  {
+    "type": "some",
     "named": false
   },
   {
@@ -7912,6 +8462,14 @@
     "named": false
   },
   {
+    "type": "symbol-plist",
+    "named": false
+  },
+  {
+    "type": "symbol-value",
+    "named": false
+  },
+  {
     "type": "tan",
     "named": false
   },
@@ -7924,6 +8482,10 @@
     "named": false
   },
   {
+    "type": "throw",
+    "named": false
+  },
+  {
     "type": "to",
     "named": false
   },
@@ -7932,11 +8494,19 @@
     "named": false
   },
   {
+    "type": "typecase",
+    "named": false
+  },
+  {
     "type": "unless",
     "named": false
   },
   {
     "type": "until",
+    "named": false
+  },
+  {
+    "type": "unwind-protect",
     "named": false
   },
   {
@@ -7960,6 +8530,10 @@
     "named": false
   },
   {
+    "type": "warn",
+    "named": false
+  },
+  {
     "type": "when",
     "named": false
   },
@@ -7969,6 +8543,26 @@
   },
   {
     "type": "with",
+    "named": false
+  },
+  {
+    "type": "with-accessors",
+    "named": false
+  },
+  {
+    "type": "with-condition-restarts",
+    "named": false
+  },
+  {
+    "type": "with-hash-table-iterator",
+    "named": false
+  },
+  {
+    "type": "with-simple-restart",
+    "named": false
+  },
+  {
+    "type": "with-slots",
     "named": false
   },
   {

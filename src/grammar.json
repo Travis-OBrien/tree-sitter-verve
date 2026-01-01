@@ -182,6 +182,14 @@
                 },
                 {
                   "type": "SYMBOL",
+                  "name": "getter_setter_lit"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "condition_lit"
+                },
+                {
+                  "type": "SYMBOL",
                   "name": "sym_lit"
                 },
                 {
@@ -5368,18 +5376,6 @@
           },
           {
             "type": "STRING",
-            "value": "and"
-          },
-          {
-            "type": "STRING",
-            "value": "or"
-          },
-          {
-            "type": "STRING",
-            "value": "not"
-          },
-          {
-            "type": "STRING",
             "value": "evenp"
           },
           {
@@ -5681,6 +5677,292 @@
           {
             "type": "STRING",
             "value": "boole-xnor"
+          }
+        ]
+      }
+    },
+    "getter_setter_lit": {
+      "type": "PREC",
+      "value": 10,
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "setf"
+          },
+          {
+            "type": "STRING",
+            "value": "setq"
+          },
+          {
+            "type": "STRING",
+            "value": "psetf"
+          },
+          {
+            "type": "STRING",
+            "value": "psetq"
+          },
+          {
+            "type": "STRING",
+            "value": "getf"
+          },
+          {
+            "type": "STRING",
+            "value": "get"
+          },
+          {
+            "type": "STRING",
+            "value": "gethash"
+          },
+          {
+            "type": "STRING",
+            "value": "remhash"
+          },
+          {
+            "type": "STRING",
+            "value": "symbol-value"
+          },
+          {
+            "type": "STRING",
+            "value": "symbol-plist"
+          },
+          {
+            "type": "STRING",
+            "value": "set"
+          },
+          {
+            "type": "STRING",
+            "value": "put"
+          },
+          {
+            "type": "STRING",
+            "value": "putprop"
+          },
+          {
+            "type": "STRING",
+            "value": "remprop"
+          },
+          {
+            "type": "STRING",
+            "value": "with-slots"
+          },
+          {
+            "type": "STRING",
+            "value": "with-accessors"
+          },
+          {
+            "type": "STRING",
+            "value": "with-hash-table-iterator"
+          },
+          {
+            "type": "STRING",
+            "value": "let"
+          },
+          {
+            "type": "STRING",
+            "value": "let*"
+          },
+          {
+            "type": "STRING",
+            "value": "bind"
+          },
+          {
+            "type": "STRING",
+            "value": "slot-value"
+          },
+          {
+            "type": "STRING",
+            "value": "set-slot-value"
+          },
+          {
+            "type": "STRING",
+            "value": "clrhash"
+          }
+        ]
+      }
+    },
+    "condition_lit": {
+      "type": "PREC",
+      "value": 10,
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "if"
+          },
+          {
+            "type": "STRING",
+            "value": "cond"
+          },
+          {
+            "type": "STRING",
+            "value": "when"
+          },
+          {
+            "type": "STRING",
+            "value": "unless"
+          },
+          {
+            "type": "STRING",
+            "value": "case"
+          },
+          {
+            "type": "STRING",
+            "value": "ecase"
+          },
+          {
+            "type": "STRING",
+            "value": "typecase"
+          },
+          {
+            "type": "STRING",
+            "value": "etypecase"
+          },
+          {
+            "type": "STRING",
+            "value": "ccase"
+          },
+          {
+            "type": "STRING",
+            "value": "and"
+          },
+          {
+            "type": "STRING",
+            "value": "or"
+          },
+          {
+            "type": "STRING",
+            "value": "not"
+          },
+          {
+            "type": "STRING",
+            "value": "every"
+          },
+          {
+            "type": "STRING",
+            "value": "some"
+          },
+          {
+            "type": "STRING",
+            "value": "none"
+          },
+          {
+            "type": "STRING",
+            "value": "notany"
+          },
+          {
+            "type": "STRING",
+            "value": "notevery"
+          },
+          {
+            "type": "STRING",
+            "value": "while"
+          },
+          {
+            "type": "STRING",
+            "value": "until"
+          },
+          {
+            "type": "STRING",
+            "value": "do"
+          },
+          {
+            "type": "STRING",
+            "value": "loop"
+          },
+          {
+            "type": "STRING",
+            "value": "progn"
+          },
+          {
+            "type": "STRING",
+            "value": "prog1"
+          },
+          {
+            "type": "STRING",
+            "value": "prog2"
+          },
+          {
+            "type": "STRING",
+            "value": "prog*"
+          },
+          {
+            "type": "STRING",
+            "value": "block"
+          },
+          {
+            "type": "STRING",
+            "value": "return-from"
+          },
+          {
+            "type": "STRING",
+            "value": "return"
+          },
+          {
+            "type": "STRING",
+            "value": "catch"
+          },
+          {
+            "type": "STRING",
+            "value": "throw"
+          },
+          {
+            "type": "STRING",
+            "value": "unwind-protect"
+          },
+          {
+            "type": "STRING",
+            "value": "handler-case"
+          },
+          {
+            "type": "STRING",
+            "value": "handler-bind"
+          },
+          {
+            "type": "STRING",
+            "value": "ignore-errors"
+          },
+          {
+            "type": "STRING",
+            "value": "assert"
+          },
+          {
+            "type": "STRING",
+            "value": "check-type"
+          },
+          {
+            "type": "STRING",
+            "value": "error"
+          },
+          {
+            "type": "STRING",
+            "value": "cerror"
+          },
+          {
+            "type": "STRING",
+            "value": "warn"
+          },
+          {
+            "type": "STRING",
+            "value": "signal"
+          },
+          {
+            "type": "STRING",
+            "value": "restart-case"
+          },
+          {
+            "type": "STRING",
+            "value": "restart-bind"
+          },
+          {
+            "type": "STRING",
+            "value": "with-simple-restart"
+          },
+          {
+            "type": "STRING",
+            "value": "with-condition-restarts"
           }
         ]
       }

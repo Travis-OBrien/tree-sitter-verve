@@ -462,7 +462,7 @@ module.exports = grammar(clojure, {
 	    '+', '-', '*', '/', '1+', '1-', '=', '/=', '<', '>', '<=', '>=',
 	    'abs', 'sqrt', 'expt', 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 'atan2',
 	    'log', 'exp', 'min', 'max', 'mod', 'rem', 'floor', 'ceiling', 'round', 'truncate',
-	    'and', 'or', 'not',
+	    //'and', 'or', 'not',
 	    'evenp', 'oddp', 'zerop', 'plusp', 'minusp', 'numberp',
 	    'ash', 'ldb', 'dpb', 'logand', 'logior', 'logxor', 'lognot', 'logtest',
 	    'isqrt', 'random', 'gcd', 'lcm', 'signum', 'float', 'complex', 'realpart', 'imagpart',
@@ -474,6 +474,25 @@ module.exports = grammar(clojure, {
 	    'hypot', 'cis', 'random-state',
 	    'bit-and', 'bit-or', 'bit-xor', 'bit-not', 'bit-eqv', 'bit-nand', 'bit-nor', 'bit-ior', 'bit-xnor',
 	    'bit', 'boole', 'boole-1', 'boole-2', 'boole-and', 'boole-or', 'boole-xor', 'boole-eqv', 'boole-nand', 'boole-nor', 'boole-ior', 'boole-xnor'
+	)),
+
+        getter_setter_lit: _ => prec(10, choice(
+	    'setf', 'setq', 'psetf', 'psetq', 'getf', 'get', 'gethash', 'remhash',
+	    'symbol-value', 'symbol-plist',
+	    'set', 'put', 'putprop', 'remprop',
+	    'with-slots', 'with-accessors', 'with-hash-table-iterator',
+            'let', 'let*', 'bind',
+	    'slot-value', 'set-slot-value',
+            'clrhash'
+	)),
+
+        condition_lit: _ => prec(10, choice(
+	    'if', 'cond', 'when', 'unless', 'case', 'ecase', 'typecase', 'etypecase', 'ccase',
+	    'and', 'or', 'not', 'every', 'some', 'none', 'notany', 'notevery',
+	    'while', 'until', 'do', 'loop', 'progn', 'prog1', 'prog2', 'prog*',
+	    'block', 'return-from', 'return', 'catch', 'throw', 'unwind-protect',
+	    'handler-case', 'handler-bind', 'ignore-errors', 'assert', 'check-type', 'error', 'cerror', 'warn', 'signal',
+	    'restart-case', 'restart-bind', 'with-simple-restart', 'with-condition-restarts'
 	)),
 
         sym_lit: _ =>
@@ -507,6 +526,8 @@ module.exports = grammar(clojure, {
                         $.nil_lit,
                         $.package_lit,
                         $.math_lit,
+                        $.getter_setter_lit,
+                        $.condition_lit,
                         $.sym_lit,
                         $.list_lit,
                         $.set_lit,
