@@ -457,6 +457,8 @@ module.exports = grammar(clojure, {
             $.kwd_symbol,
         )),
 
+        math_lit: _ => prec(10, choice('and', 'or', 'not')),
+
         sym_lit: _ =>
             seq(SYMBOL),
 
@@ -465,6 +467,8 @@ module.exports = grammar(clojure, {
 
         kwd_symbol: _ =>
             seq(SYMBOL),
+
+        
 
         self_referential_reader_macro: _ => /#\d+[=#]/,
 
@@ -484,8 +488,9 @@ module.exports = grammar(clojure, {
                         $.self_referential_reader_macro,
                         $.char_lit,
                         $.nil_lit,
-                        $.sym_lit,
                         $.package_lit,
+                        $.math_lit,
+                        $.sym_lit,
                         $.list_lit,
                         $.set_lit,
                         $.read_cond_lit,

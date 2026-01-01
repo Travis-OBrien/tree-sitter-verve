@@ -174,11 +174,15 @@
                 },
                 {
                   "type": "SYMBOL",
-                  "name": "sym_lit"
+                  "name": "package_lit"
                 },
                 {
                   "type": "SYMBOL",
-                  "name": "package_lit"
+                  "name": "math_lit"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "sym_lit"
                 },
                 {
                   "type": "SYMBOL",
@@ -5227,6 +5231,27 @@
           }
         }
       ]
+    },
+    "math_lit": {
+      "type": "PREC",
+      "value": 10,
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "and"
+          },
+          {
+            "type": "STRING",
+            "value": "or"
+          },
+          {
+            "type": "STRING",
+            "value": "not"
+          }
+        ]
+      }
     },
     "_sym_lit_without_slash": {
       "type": "ALIAS",

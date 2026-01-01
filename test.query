@@ -1,0 +1,1 @@
+(sym_lit) @math (#match? @math "^and$")
