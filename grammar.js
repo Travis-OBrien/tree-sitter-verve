@@ -409,8 +409,15 @@ module.exports = grammar(clojure, {
                     seq(field('open', '#'), optional($.array_dimension), $.list_lit))),
 
         path_lit: $ =>
-            prec(PREC.SPECIAL,
-                seq(field('open', choice('#P', '#p')), alias(STRING, $.str_lit))),
+            prec(11,
+                seq(field('open', choice('#P', '#p')), 
+                    choice(alias(STRING, $.str_lit), 
+                           seq('#{',
+                               repeat(choice(
+                                   token.immediate(prec(1, /[^\\}]+/)),
+                                   token.immediate(seq(/\\./)),
+                               )),
+                               '}')))),
 
         _bare_list_lit: $ =>
             choice(prec(PREC.SPECIAL, $.defun),
@@ -462,35 +469,37 @@ module.exports = grammar(clojure, {
         self_referential_reader_macro: _ => /#\d+[=#]/,
 
         _form: $ =>
-            seq(optional('#'),
-                choice(
-                    $.num_lit,
-                    $.fancy_literal,
-                    $.vec_lit,
-                    $.kwd_lit,
-                    // No idea why this is necessary...It is never used but triggers some background magic
-                    alias(seq(field('open', '#'), optional(/\d+[aA]/), $.list_lit), $.vec_lit),
-                    $.str_lit,
-                    $.self_referential_reader_macro,
-                    $.char_lit,
-                    $.nil_lit,
-                    $.path_lit,
-                    $.sym_lit,
-                    $.package_lit,
-                    $.list_lit,
-                    $.set_lit,
-                    $.read_cond_lit,
-                    $.splicing_read_cond_lit,
-                    $.var_quoting_lit,
-                    $.quoting_lit,
-                    $.syn_quoting_lit,
-                    $.unquote_splicing_lit,
-                    $.unquoting_lit,
-                    $.include_reader_macro,
-                    $.complex_num_lit,
-                    ".",
-                    $.sexp_comment
-                )),
+            choice(
+                
+                seq(optional('#'),
+                    choice(
+                        $.num_lit,
+                        $.fancy_literal,
+                        $.vec_lit,
+                        $.kwd_lit,
+                        // No idea why this is necessary...It is never used but triggers some background magic
+                        alias(seq(field('open', '#'), optional(/\d+[aA]/), $.list_lit), $.vec_lit),
+                        $.path_lit,
+                        $.str_lit,
+                        $.self_referential_reader_macro,
+                        $.char_lit,
+                        $.nil_lit,
+                        $.sym_lit,
+                        $.package_lit,
+                        $.list_lit,
+                        $.set_lit,
+                        $.read_cond_lit,
+                        $.splicing_read_cond_lit,
+                        $.var_quoting_lit,
+                        $.quoting_lit,
+                        $.syn_quoting_lit,
+                        $.unquote_splicing_lit,
+                        $.unquoting_lit,
+                        $.include_reader_macro,
+                        $.complex_num_lit,
+                        ".",
+                        $.sexp_comment
+                    ))),
 
         num_lit: _ =>
             seq(NUMBER, optional(/[sSfFdDlL]/)),
