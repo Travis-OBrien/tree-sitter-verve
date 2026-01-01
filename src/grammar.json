@@ -5240,6 +5240,134 @@
         "members": [
           {
             "type": "STRING",
+            "value": "+"
+          },
+          {
+            "type": "STRING",
+            "value": "-"
+          },
+          {
+            "type": "STRING",
+            "value": "*"
+          },
+          {
+            "type": "STRING",
+            "value": "/"
+          },
+          {
+            "type": "STRING",
+            "value": "1+"
+          },
+          {
+            "type": "STRING",
+            "value": "1-"
+          },
+          {
+            "type": "STRING",
+            "value": "="
+          },
+          {
+            "type": "STRING",
+            "value": "/="
+          },
+          {
+            "type": "STRING",
+            "value": "<"
+          },
+          {
+            "type": "STRING",
+            "value": ">"
+          },
+          {
+            "type": "STRING",
+            "value": "<="
+          },
+          {
+            "type": "STRING",
+            "value": ">="
+          },
+          {
+            "type": "STRING",
+            "value": "abs"
+          },
+          {
+            "type": "STRING",
+            "value": "sqrt"
+          },
+          {
+            "type": "STRING",
+            "value": "expt"
+          },
+          {
+            "type": "STRING",
+            "value": "sin"
+          },
+          {
+            "type": "STRING",
+            "value": "cos"
+          },
+          {
+            "type": "STRING",
+            "value": "tan"
+          },
+          {
+            "type": "STRING",
+            "value": "asin"
+          },
+          {
+            "type": "STRING",
+            "value": "acos"
+          },
+          {
+            "type": "STRING",
+            "value": "atan"
+          },
+          {
+            "type": "STRING",
+            "value": "atan2"
+          },
+          {
+            "type": "STRING",
+            "value": "log"
+          },
+          {
+            "type": "STRING",
+            "value": "exp"
+          },
+          {
+            "type": "STRING",
+            "value": "min"
+          },
+          {
+            "type": "STRING",
+            "value": "max"
+          },
+          {
+            "type": "STRING",
+            "value": "mod"
+          },
+          {
+            "type": "STRING",
+            "value": "rem"
+          },
+          {
+            "type": "STRING",
+            "value": "floor"
+          },
+          {
+            "type": "STRING",
+            "value": "ceiling"
+          },
+          {
+            "type": "STRING",
+            "value": "round"
+          },
+          {
+            "type": "STRING",
+            "value": "truncate"
+          },
+          {
+            "type": "STRING",
             "value": "and"
           },
           {
@@ -5249,6 +5377,310 @@
           {
             "type": "STRING",
             "value": "not"
+          },
+          {
+            "type": "STRING",
+            "value": "evenp"
+          },
+          {
+            "type": "STRING",
+            "value": "oddp"
+          },
+          {
+            "type": "STRING",
+            "value": "zerop"
+          },
+          {
+            "type": "STRING",
+            "value": "plusp"
+          },
+          {
+            "type": "STRING",
+            "value": "minusp"
+          },
+          {
+            "type": "STRING",
+            "value": "numberp"
+          },
+          {
+            "type": "STRING",
+            "value": "ash"
+          },
+          {
+            "type": "STRING",
+            "value": "ldb"
+          },
+          {
+            "type": "STRING",
+            "value": "dpb"
+          },
+          {
+            "type": "STRING",
+            "value": "logand"
+          },
+          {
+            "type": "STRING",
+            "value": "logior"
+          },
+          {
+            "type": "STRING",
+            "value": "logxor"
+          },
+          {
+            "type": "STRING",
+            "value": "lognot"
+          },
+          {
+            "type": "STRING",
+            "value": "logtest"
+          },
+          {
+            "type": "STRING",
+            "value": "isqrt"
+          },
+          {
+            "type": "STRING",
+            "value": "random"
+          },
+          {
+            "type": "STRING",
+            "value": "gcd"
+          },
+          {
+            "type": "STRING",
+            "value": "lcm"
+          },
+          {
+            "type": "STRING",
+            "value": "signum"
+          },
+          {
+            "type": "STRING",
+            "value": "float"
+          },
+          {
+            "type": "STRING",
+            "value": "complex"
+          },
+          {
+            "type": "STRING",
+            "value": "realpart"
+          },
+          {
+            "type": "STRING",
+            "value": "imagpart"
+          },
+          {
+            "type": "STRING",
+            "value": "conjugate"
+          },
+          {
+            "type": "STRING",
+            "value": "phase"
+          },
+          {
+            "type": "STRING",
+            "value": "scale-float"
+          },
+          {
+            "type": "STRING",
+            "value": "float-radix"
+          },
+          {
+            "type": "STRING",
+            "value": "float-sign"
+          },
+          {
+            "type": "STRING",
+            "value": "float-digits"
+          },
+          {
+            "type": "STRING",
+            "value": "float-precision"
+          },
+          {
+            "type": "STRING",
+            "value": "rational"
+          },
+          {
+            "type": "STRING",
+            "value": "rationalize"
+          },
+          {
+            "type": "STRING",
+            "value": "numerator"
+          },
+          {
+            "type": "STRING",
+            "value": "denominator"
+          },
+          {
+            "type": "STRING",
+            "value": "integerp"
+          },
+          {
+            "type": "STRING",
+            "value": "rationalp"
+          },
+          {
+            "type": "STRING",
+            "value": "realp"
+          },
+          {
+            "type": "STRING",
+            "value": "complexp"
+          },
+          {
+            "type": "STRING",
+            "value": "floatp"
+          },
+          {
+            "type": "STRING",
+            "value": "fixnum"
+          },
+          {
+            "type": "STRING",
+            "value": "bignum"
+          },
+          {
+            "type": "STRING",
+            "value": "incf"
+          },
+          {
+            "type": "STRING",
+            "value": "decf"
+          },
+          {
+            "type": "STRING",
+            "value": "add"
+          },
+          {
+            "type": "STRING",
+            "value": "subtract"
+          },
+          {
+            "type": "STRING",
+            "value": "multiply"
+          },
+          {
+            "type": "STRING",
+            "value": "divide"
+          },
+          {
+            "type": "STRING",
+            "value": "sum"
+          },
+          {
+            "type": "STRING",
+            "value": "product"
+          },
+          {
+            "type": "STRING",
+            "value": "mean"
+          },
+          {
+            "type": "STRING",
+            "value": "variance"
+          },
+          {
+            "type": "STRING",
+            "value": "standard-deviation"
+          },
+          {
+            "type": "STRING",
+            "value": "hypot"
+          },
+          {
+            "type": "STRING",
+            "value": "cis"
+          },
+          {
+            "type": "STRING",
+            "value": "random-state"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-and"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-or"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-xor"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-not"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-eqv"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-nand"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-nor"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-ior"
+          },
+          {
+            "type": "STRING",
+            "value": "bit-xnor"
+          },
+          {
+            "type": "STRING",
+            "value": "bit"
+          },
+          {
+            "type": "STRING",
+            "value": "boole"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-1"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-2"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-and"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-or"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-xor"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-eqv"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-nand"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-nor"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-ior"
+          },
+          {
+            "type": "STRING",
+            "value": "boole-xnor"
           }
         ]
       }

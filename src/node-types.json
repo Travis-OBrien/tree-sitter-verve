@@ -7252,6 +7252,10 @@
     "named": false
   },
   {
+    "type": "+",
+    "named": false
+  },
+  {
     "type": ",",
     "named": false
   },
@@ -7260,11 +7264,27 @@
     "named": false
   },
   {
+    "type": "-",
+    "named": false
+  },
+  {
     "type": ".",
     "named": false
   },
   {
     "type": "/",
+    "named": false
+  },
+  {
+    "type": "/=",
+    "named": false
+  },
+  {
+    "type": "1+",
+    "named": false
+  },
+  {
+    "type": "1-",
     "named": false
   },
   {
@@ -7284,7 +7304,23 @@
     "named": false
   },
   {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
     "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
     "named": false
   },
   {
@@ -7332,7 +7368,19 @@
     "named": false
   },
   {
+    "type": "abs",
+    "named": false
+  },
+  {
+    "type": "acos",
+    "named": false
+  },
+  {
     "type": "across",
+    "named": false
+  },
+  {
+    "type": "add",
     "named": false
   },
   {
@@ -7348,6 +7396,22 @@
     "named": false
   },
   {
+    "type": "ash",
+    "named": false
+  },
+  {
+    "type": "asin",
+    "named": false
+  },
+  {
+    "type": "atan",
+    "named": false
+  },
+  {
+    "type": "atan2",
+    "named": false
+  },
+  {
     "type": "being",
     "named": false
   },
@@ -7356,11 +7420,107 @@
     "named": false
   },
   {
+    "type": "bignum",
+    "named": false
+  },
+  {
+    "type": "bit",
+    "named": false
+  },
+  {
+    "type": "bit-and",
+    "named": false
+  },
+  {
+    "type": "bit-eqv",
+    "named": false
+  },
+  {
+    "type": "bit-ior",
+    "named": false
+  },
+  {
+    "type": "bit-nand",
+    "named": false
+  },
+  {
+    "type": "bit-nor",
+    "named": false
+  },
+  {
+    "type": "bit-not",
+    "named": false
+  },
+  {
+    "type": "bit-or",
+    "named": false
+  },
+  {
+    "type": "bit-xnor",
+    "named": false
+  },
+  {
+    "type": "bit-xor",
+    "named": false
+  },
+  {
     "type": "block_comment",
     "named": true
   },
   {
+    "type": "boole",
+    "named": false
+  },
+  {
+    "type": "boole-1",
+    "named": false
+  },
+  {
+    "type": "boole-2",
+    "named": false
+  },
+  {
+    "type": "boole-and",
+    "named": false
+  },
+  {
+    "type": "boole-eqv",
+    "named": false
+  },
+  {
+    "type": "boole-ior",
+    "named": false
+  },
+  {
+    "type": "boole-nand",
+    "named": false
+  },
+  {
+    "type": "boole-nor",
+    "named": false
+  },
+  {
+    "type": "boole-or",
+    "named": false
+  },
+  {
+    "type": "boole-xnor",
+    "named": false
+  },
+  {
+    "type": "boole-xor",
+    "named": false
+  },
+  {
     "type": "by",
+    "named": false
+  },
+  {
+    "type": "ceiling",
+    "named": false
+  },
+  {
+    "type": "cis",
     "named": false
   },
   {
@@ -7376,7 +7536,27 @@
     "named": true
   },
   {
+    "type": "complex",
+    "named": false
+  },
+  {
+    "type": "complexp",
+    "named": false
+  },
+  {
+    "type": "conjugate",
+    "named": false
+  },
+  {
     "type": "constructor",
+    "named": false
+  },
+  {
+    "type": "cos",
+    "named": false
+  },
+  {
+    "type": "decf",
     "named": false
   },
   {
@@ -7400,6 +7580,14 @@
     "named": false
   },
   {
+    "type": "denominator",
+    "named": false
+  },
+  {
+    "type": "divide",
+    "named": false
+  },
+  {
     "type": "do",
     "named": false
   },
@@ -7412,7 +7600,23 @@
     "named": false
   },
   {
+    "type": "dpb",
+    "named": false
+  },
+  {
     "type": "else",
+    "named": false
+  },
+  {
+    "type": "evenp",
+    "named": false
+  },
+  {
+    "type": "exp",
+    "named": false
+  },
+  {
+    "type": "expt",
     "named": false
   },
   {
@@ -7421,6 +7625,38 @@
   },
   {
     "type": "finally",
+    "named": false
+  },
+  {
+    "type": "fixnum",
+    "named": false
+  },
+  {
+    "type": "float",
+    "named": false
+  },
+  {
+    "type": "float-digits",
+    "named": false
+  },
+  {
+    "type": "float-precision",
+    "named": false
+  },
+  {
+    "type": "float-radix",
+    "named": false
+  },
+  {
+    "type": "float-sign",
+    "named": false
+  },
+  {
+    "type": "floatp",
+    "named": false
+  },
+  {
+    "type": "floor",
     "named": false
   },
   {
@@ -7436,7 +7672,15 @@
     "named": false
   },
   {
+    "type": "gcd",
+    "named": false
+  },
+  {
     "type": "global",
+    "named": false
+  },
+  {
+    "type": "hypot",
     "named": false
   },
   {
@@ -7444,7 +7688,15 @@
     "named": false
   },
   {
+    "type": "imagpart",
+    "named": false
+  },
+  {
     "type": "in",
+    "named": false
+  },
+  {
+    "type": "incf",
     "named": false
   },
   {
@@ -7452,7 +7704,47 @@
     "named": false
   },
   {
+    "type": "integerp",
+    "named": false
+  },
+  {
     "type": "into",
+    "named": false
+  },
+  {
+    "type": "isqrt",
+    "named": false
+  },
+  {
+    "type": "lcm",
+    "named": false
+  },
+  {
+    "type": "ldb",
+    "named": false
+  },
+  {
+    "type": "log",
+    "named": false
+  },
+  {
+    "type": "logand",
+    "named": false
+  },
+  {
+    "type": "logior",
+    "named": false
+  },
+  {
+    "type": "lognot",
+    "named": false
+  },
+  {
+    "type": "logtest",
+    "named": false
+  },
+  {
+    "type": "logxor",
     "named": false
   },
   {
@@ -7464,7 +7756,31 @@
     "named": false
   },
   {
+    "type": "max",
+    "named": false
+  },
+  {
+    "type": "mean",
+    "named": false
+  },
+  {
     "type": "method",
+    "named": false
+  },
+  {
+    "type": "min",
+    "named": false
+  },
+  {
+    "type": "minusp",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "multiply",
     "named": false
   },
   {
@@ -7480,6 +7796,18 @@
     "named": false
   },
   {
+    "type": "numberp",
+    "named": false
+  },
+  {
+    "type": "numerator",
+    "named": false
+  },
+  {
+    "type": "oddp",
+    "named": false
+  },
+  {
     "type": "on",
     "named": false
   },
@@ -7492,6 +7820,50 @@
     "named": false
   },
   {
+    "type": "phase",
+    "named": false
+  },
+  {
+    "type": "plusp",
+    "named": false
+  },
+  {
+    "type": "product",
+    "named": false
+  },
+  {
+    "type": "random",
+    "named": false
+  },
+  {
+    "type": "random-state",
+    "named": false
+  },
+  {
+    "type": "rational",
+    "named": false
+  },
+  {
+    "type": "rationalize",
+    "named": false
+  },
+  {
+    "type": "rationalp",
+    "named": false
+  },
+  {
+    "type": "realp",
+    "named": false
+  },
+  {
+    "type": "realpart",
+    "named": false
+  },
+  {
+    "type": "rem",
+    "named": false
+  },
+  {
     "type": "repeat",
     "named": false
   },
@@ -7500,11 +7872,47 @@
     "named": false
   },
   {
+    "type": "round",
+    "named": false
+  },
+  {
+    "type": "scale-float",
+    "named": false
+  },
+  {
     "type": "self_referential_reader_macro",
     "named": true
   },
   {
+    "type": "signum",
+    "named": false
+  },
+  {
+    "type": "sin",
+    "named": false
+  },
+  {
+    "type": "sqrt",
+    "named": false
+  },
+  {
+    "type": "standard-deviation",
+    "named": false
+  },
+  {
     "type": "struct",
+    "named": false
+  },
+  {
+    "type": "subtract",
+    "named": false
+  },
+  {
+    "type": "sum",
+    "named": false
+  },
+  {
+    "type": "tan",
     "named": false
   },
   {
@@ -7517,6 +7925,10 @@
   },
   {
     "type": "to",
+    "named": false
+  },
+  {
+    "type": "truncate",
     "named": false
   },
   {
@@ -7544,6 +7956,10 @@
     "named": false
   },
   {
+    "type": "variance",
+    "named": false
+  },
+  {
     "type": "when",
     "named": false
   },
@@ -7553,6 +7969,10 @@
   },
   {
     "type": "with",
+    "named": false
+  },
+  {
+    "type": "zerop",
     "named": false
   },
   {

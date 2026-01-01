@@ -457,7 +457,24 @@ module.exports = grammar(clojure, {
             $.kwd_symbol,
         )),
 
-        math_lit: _ => prec(10, choice('and', 'or', 'not')),
+        //math_lit: _ => prec(10, choice('and', 'or', 'not')),
+        math_lit: _ => prec(10, choice(
+	    '+', '-', '*', '/', '1+', '1-', '=', '/=', '<', '>', '<=', '>=',
+	    'abs', 'sqrt', 'expt', 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 'atan2',
+	    'log', 'exp', 'min', 'max', 'mod', 'rem', 'floor', 'ceiling', 'round', 'truncate',
+	    'and', 'or', 'not',
+	    'evenp', 'oddp', 'zerop', 'plusp', 'minusp', 'numberp',
+	    'ash', 'ldb', 'dpb', 'logand', 'logior', 'logxor', 'lognot', 'logtest',
+	    'isqrt', 'random', 'gcd', 'lcm', 'signum', 'float', 'complex', 'realpart', 'imagpart',
+	    'conjugate', 'phase', 'scale-float', 'float-radix', 'float-sign', 'float-digits',
+	    'float-precision', 'rational', 'rationalize', 'numerator', 'denominator',
+	    'integerp', 'rationalp', 'realp', 'complexp', 'floatp', 'fixnum', 'bignum',
+	    'incf', 'decf', 'add', 'subtract', 'multiply', 'divide',
+	    'sum', 'product', 'mean', 'variance', 'standard-deviation',
+	    'hypot', 'cis', 'random-state',
+	    'bit-and', 'bit-or', 'bit-xor', 'bit-not', 'bit-eqv', 'bit-nand', 'bit-nor', 'bit-ior', 'bit-xnor',
+	    'bit', 'boole', 'boole-1', 'boole-2', 'boole-and', 'boole-or', 'boole-xor', 'boole-eqv', 'boole-nand', 'boole-nor', 'boole-ior', 'boole-xnor'
+	)),
 
         sym_lit: _ =>
             seq(SYMBOL),
